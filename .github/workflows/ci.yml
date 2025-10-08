@@ -25,9 +25,8 @@ jobs:
           pip install pytest requests
 
       - name: Run pytest
-        env:
-          API_BASE_URL: ${{ secrets.API_BASE_URL || 'https://dummyjson.com' }}
-        run: pytest -m api -v --maxfail=1 --disable-warnings
+        run: pytest tests/api -v --maxfail=1 --disable-warnings
+
       
   ui-tests:
     name: UI tests (Playwright)

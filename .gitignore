@@ -1,0 +1,23 @@
+# 🐍 Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# 🧪 Test reports
+playwright-report/
+test-results/
+
+# 📦 Node.js / Playwright
+node_modules/
+package-lock.json
+
+# 💻 IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# 🚫 Logs
+*.log
